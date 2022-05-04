@@ -1,7 +1,7 @@
 body {
   background-color: rgb(212, 212, 212);
   font-family: 'Raleway', sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -25,26 +25,29 @@ p {
   line-height: 30px;
 }
 
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
 .img_profile {
   filter: grayscale();
-  border-radius: 5px;
-  width: 200px;
-  height: 235px;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
 }
 
 .shadowed {
-  box-shadow: 0px 3px 5px rgb(169, 168, 168);
+  box-shadow: 0px 3px 5px rgb(113, 113, 113);
 }
 
 a {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 25px;
+  font-size: 30px;
   color: rgb(138, 144, 150);
   text-decoration: none;
 }
-
 
 .card {
   background: white;
@@ -57,7 +60,6 @@ a {
 
 #list_links {
   background-image: url("images/marissa-lewis-d0L_Ce9TKuM-unsplash.jpeg");
-  opacity: 0.95;
   background-size: cover;
 }
 
@@ -69,34 +71,52 @@ a {
 .list-inline {
   list-style: none;
   padding-left: 0px;
-  margin: 0px;
 }
 
 .list-inline > li {
   display: inline-block;
-  padding: 0px 30px;
-  /* text-align: center; */
+  padding: 0px 25px;
 }
 
 .btn-gray {
-  background-color: #706d6d;
+  background-color: #767575;
   color: white;
-  padding: 5px 15px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
   border-radius: 4px;
   box-shadow: 0px 4px 5px rgb(201, 197, 197);
 }
 
 .btn-gray:hover {
-  background-color: #c0bfbf;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 4px;
+  background-color: #a4a3a3;
 }
 
 i {
-  color: rgb(227, 227, 227)
+  color: rgb(255, 255, 255)
 }
 
 i:hover {
   color: black
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
 }
